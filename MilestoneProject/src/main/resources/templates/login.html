@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html layout:decorate="\layouts\deafaultLayout.html">
+	
+
+<body>
+    <div class="container my-5" layout:fragment="content">
+		<div class="mb-3">
+        <h3>Login Form</h3>
+        <br>
+       
+        <form th:action="@{/dohome}" th:object="${loginModel}" method="post">
+				<div class="mb-3">
+            <input type="text" class="form-control" th:field="*{username}" placeholder="User Name" required>
+            <br>
+            
+            
+            <input type="password" class="form-control" th:field="*{password}" placeholder="Password" required>
+          
+            <br>
+            <button type="submit" class="btn btn-outline-info">Submit</button>
+              <br>
+              <br>
+            <span th:if="${#fields.hasErrors('password')}" th:errors="*{password}"></span>
+            <span th:if="${#fields.hasErrors('username')}" th:errors="*{username}"></span>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

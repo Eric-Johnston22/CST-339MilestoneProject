@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html layout:decorate="\layouts\deafaultLayout.html">
+
+<body>
+  <div class="container my-5" layout:fragment="content">
+    <div class="mb-3">
+      <h3>Register Form</h3>
+      <br>
+      <form th:action="@{/home}" th:object="${user}" method="post">
+        <div class="row">
+          <div class="col-12 mb-3">
+            <input type="text" class="form-control" th:field="*{Email}" placeholder="Email" required>
+          </div>
+          <div class="col-md-6 mb-3">
+            <input type="text" class="form-control" th:field="*{FirstName}" placeholder="First Name" required>
+          </div>
+          <div class="col-md-6 mb-3">
+            <input type="text" class="form-control" th:field="*{LastName}" placeholder="Last Name" required>
+          </div>
+          <div class="col-12 mb-3">
+            <input type="password" class="form-control" th:field="*{Password}" placeholder="Password" required>
+          </div>
+          <div class="col-12 mb-3">
+            <button type="submit" class="btn btn-outline-info">Register</button>
+          </div>
+        </div>
+        <br>
+        <br>
+        <!--<span th:if="${#fields.hasErrors('password')}" th:errors="*{password}"></span>
+        <span th:if="${#fields.hasErrors('username')}" th:errors="*{FirstName}"></span>!-->
+      </form>
+    </div>
+  </div>
+</body>
+</html>
