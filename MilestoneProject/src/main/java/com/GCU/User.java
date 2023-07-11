@@ -1,7 +1,6 @@
-package com.JonahBillerbeck;
+package com.GCU;
 
-public class RegisterModel {
-
+public class User {
 	private String Email;
 	private String FirstName;
 	private String LastName;

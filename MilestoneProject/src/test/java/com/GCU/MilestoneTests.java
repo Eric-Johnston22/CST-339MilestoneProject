@@ -1,4 +1,4 @@
-package com.JonahBillerbeck;
+package com.GCU;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

@@ -1,4 +1,4 @@
-package com.JonahBillerbeck;
+package com.GCU;
 
 import jakarta.validation.constraints.Size;
 

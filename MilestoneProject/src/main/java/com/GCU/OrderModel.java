@@ -1,4 +1,4 @@
-package com.JonahBillerbeck;
+package com.GCU;
 
 public class OrderModel {
     private Long id;
